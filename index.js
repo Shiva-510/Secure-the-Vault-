@@ -14,3 +14,14 @@ const numComb3 = 78 / 2;
 // answer should be equal to 39
 
 alert(stringVar);
+const dialogElem = document.getElementById("dialog");
+const showBtn = document.querySelector(".show");
+const closeBtn = document.querySelector(".close");
+
+showBtn.addEventListener("click", () => {
+  dialogElem.showModal();
+});
+
+closeBtn.addEventListener("click", () => {
+  dialogElem.close();
+});
